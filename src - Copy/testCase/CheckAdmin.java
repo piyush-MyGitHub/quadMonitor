@@ -1,25 +1,11 @@
 package testCase;
 
 import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.Assert;
-import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.seleniumhq.jetty7.util.log.Log;
 
-import commonfunctions.BrowserManagement;
-import commonfunctions.ScreenShotOnTestFailure;
-import environment.EnvironmentVariables;
-
+//tHIS IS JUST TO CHECK GIT        HIB 
+//this is for test git commiot
 public class CheckAdmin {
 	//Remote Web driver for remote execution
 	public RemoteWebDriver driver = null;
@@ -36,6 +22,7 @@ public class CheckAdmin {
 		//Edit Browser Capabilities as per project
 		//Fire fox Profile
 		FirefoxProfile profile = new FirefoxProfile();
+		Log.info("sdsdsdsd");
 			
 		//Capability
 		objBrowserMgr = new BrowserManagement(sBrowser);
