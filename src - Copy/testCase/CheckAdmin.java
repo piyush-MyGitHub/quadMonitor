@@ -9,7 +9,7 @@ import org.seleniumhq.jetty7.util.log.Log;
 public class CheckAdmin {
 	//Remote Web driver for remote execution
 	public RemoteWebDriver driver = null;
-	
+	Log.info("");	
 	//BrowseManagement to set the browser capabilities
 	public BrowserManagement objBrowserMgr = null;
 	
@@ -22,8 +22,7 @@ public class CheckAdmin {
 		//Edit Browser Capabilities as per project
 		//Fire fox Profile
 		FirefoxProfile profile = new FirefoxProfile();
-		Log.info("sdsdsdsd");
-			
+				
 		//Capability
 		objBrowserMgr = new BrowserManagement(sBrowser);
 		objBrowserMgr.capability.setCapability(FirefoxDriver.PROFILE, profile);		
