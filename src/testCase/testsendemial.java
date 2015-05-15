@@ -15,7 +15,7 @@ public class testsendemial {
   public void teest() {
 	  
 	  driver = new FirefoxDriver();
-	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	  driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 	  driver.get("http://10.78.74.199/Ticketing/SearchFrame.aspx?p=SearchLeads");
 	  driver.switchTo().frame(driver.findElement(By.id("ctl00_PageBodyPlaceHolder_ifContent")));
 	  driver.findElement(By.xpath(".//*[@id='ctl00_PageBodyPlaceHolder_tbFirstName']")).sendKeys("TSE");
